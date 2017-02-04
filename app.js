@@ -17,15 +17,6 @@ app.use(async (ctx, next) => {
     const ms = new Date().getTime() - start // 耗费时间
     console.log(`Time: ${ms}ms`) // 打印耗费时间
 })
-class Point {
-    constructor (a) {
-        this.a = a
-    }
-    value () {
-        console.log(this.a)
-    }
-} 
-const tyty = new Point(1)
-tyty.value()
+
 app.use(router.routes())
 app.listen(3000);
